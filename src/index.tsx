@@ -5,8 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PagPoke from './pages/pag-poke-ignore';
-import PokemonDetails from './pages/details';
+import PokemonDetailsView from './pages/details';
 import PokemonListController from './pages/pokemon-list/controller/pokemon-list-controller';
+import PokemonDetailControler from './pages/details/controler/pokemon-details-controler';
 
 
 
@@ -17,7 +18,7 @@ root.render(
   <BrowserRouter>
   <Routes>
     <Route path='/' element={<PokemonListController/>}/>
-    <Route path='/pokemon-details'element={<PokemonDetails/>}></Route>
+    <Route path='/pokemon-details'element={<PokemonDetailControler/>}></Route>
   </Routes>
   </BrowserRouter>
 );
